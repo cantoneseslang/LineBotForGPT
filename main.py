@@ -767,7 +767,7 @@ def lineBot():
                 
             if any(word in userMessage for word in NG_KEYWORDS):
                 headMessage = headMessage + NG_MESSAGE
-            headMessage = headMessage + "次の言葉をユーザー入力のまま広東語口語に翻訳して返してください：{user_input}"
+            headMessage = headMessage + "次の言葉をユーザー入力のまま広東語口語に翻訳して返してください。"
           
             if 'start_free_day' in user:
                 if (nowDate.date() - start_free_day.date()).days < FREE_LIMIT_DAY:
